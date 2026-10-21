@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v1.1.1 — 2026-10-21
+
+**新增**
+- 第 12 项能力 `superpowers/`：开发方法论（obra/superpowers，15 个组合式技能：brainstorming / writing-plans / test-driven-development / subagent-driven-development / systematic-debugging / verification-before-completion / code-review 等），含总入口 `SKILL.md`。
+
+**变更**
+- 内置工作流升级为「快速 / 工程」双模式（嫁接点①）：第三步新增工程模式——设计定稿后走 superpowers（计划 → TDD → 子代理执行 → 验证 → 评审）交付已验证代码。
+- 第一步需求模糊时触发 `superpowers/brainstorming` 收敛（嫁接点②）；新增第四步「完成前验证」——声称完成前必须跑测试/构建并附证据（嫁接点③）。
+- 全局铁律新增 3 条：TDD 不可跳过、计划先行、完成前验证（方案 C 铁律融合）。
+- README 与 SKILL.md 同步：能力表 11 → 12、路由/决策树/分册索引/技能关系/铁律/工作流全量更新；版本号 1.1.0 → 1.1.1。
+
+> 本版总结：嫁接 superpowers 开发方法论为第 12 项能力，内置工作流实现「设计（CHT-UI-SKILLS）× 工程（superpowers）」接口对接：需求模糊先头脑风暴、代码生成可切工程模式、完成前强制验证。
+
 ## v1.1.0 — 2026-10-20
 
 **新增**
