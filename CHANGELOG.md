@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v1.2.0 — 2026-10-23
+
+**新增（AI 审美三件套）**
+- 第 13 项能力 `frontend-design/`（`anthropics/skills`，Anthropic 官方）：设计哲学底座——像设计工作室主设那样思考，主题优先、避默认字体、列出并避开 5 大 AI 默认陷阱、两遍流程（先 token 设计计划 → 审校 → 再写码）。
+- 第 14 项能力 `taste-skill/`（`Leonxlnx/taste-skill`，name: design-taste-frontend）：研究方向引擎——`scripts/draw.mjs` 从 247 个策展站提炼的 20 个研究方向发牌，`library/` 提供 type/palette/hero/section 蓝图，`scripts/inspect.mjs` 真实浏览器实测，三宽度截图 + rubric + fix 的 look-and-fix 循环；含 11 篇 `references/` 方法论文档。
+- 第 15 项能力 `garden-skills/`（`ConardLi/garden-skills`）：风格配方库 + 设计工程师全流程——`skills/web-design-engineer` 内置 25 种锚定风格配方（Linear/Aesop/Pentagram/Bloomberg/Stripe…）+ Step 0 事实核查 + Design Direction Advisor 模式；另含 `web-video-presentation`/`gpt-image-2`/`beautiful-article`/`kb-retriever`/`motion-showreel` 共 6 技能。
+
+**变更（深入嫁接，非仅入表）**
+- 内置工作流第一步新增「审美打底（接口④，frontend-design）」与「采集方向素材（接口⑤，taste-skill/garden-skills）」两步，收尾用 taste-skill look-and-fix 做实测验收闭环。
+- 全局铁律新增 3 条：12 反 AI 默认陷阱（frontend-design 5 tells）、13 实测而非空想（taste-skill）、14 事实先于设计（garden web-design-engineer Step 0）。
+- README 与 SKILL.md 同步：能力表 12 → 15、frontmatter description/tags、决策树、触发词索引、「与其它技能的关系」（三者定位为审美底座/方向引擎/配方库）、组合模式新增「AI 审美三件套」；版本号 1.1.1 → 1.2.0。
+
+> 本版总结：嫁接 Anthropic frontend-design、Leonxlnx/taste-skill、ConardLi/garden-skills 为第 13/14/15 项能力，把「审美哲学 + 方向引擎 + 风格配方」深度织入内置工作流第一步与全局铁律，专治 AI 生成界面的「模板味 / AI 味」。
+
 ## v1.1.1 — 2026-10-21
 
 **新增**

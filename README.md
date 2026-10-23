@@ -1,10 +1,12 @@
 # CHT-UI-SKILLS
 
-一站式前端视觉与动效技能集，融合 12 大能力，并内置一条「出方案矩阵 → 出稿（静态稿 / 可拖改原型）→ 生成可运行代码（快速 / 工程模式）→ 完成前验证」的编排工作流。
+一站式前端视觉与动效技能集，融合 15 大能力，并内置一条「审美打底 → 出方案矩阵 → 出稿（静态稿 / 可拖改原型）→ 生成可运行代码（快速 / 工程模式）→ 完成前验证 → 实测验收」的编排工作流。
 
 ## 工作流（内置）
 
 ```
+frontend-design 定审美立场 + taste-skill/garden-skills 供方向素材（避开 AI 默认陷阱）
+   ↓
 oil-ui + 8 大分册 → 出「风格 × 技术」方案矩阵（默认 6-9 版）放在对比页让你挑
    ↓ 闸门确认分支
 分支甲：draw-ui → 出静态精细设计稿
@@ -19,7 +21,7 @@ oil-ui + 8 大分册 → 出「风格 × 技术」方案矩阵（默认 6-9 版�
 你手动接进项目、git 提交、部署
 ```
 
-## 12 大能力
+## 15 大能力
 
 | # | 能力 | 开源来源 | 一句话 |
 |---|------|----------|--------|
@@ -35,6 +37,9 @@ oil-ui + 8 大分册 → 出「风格 × 技术」方案矩阵（默认 6-9 版�
 | 10 | draw-ui 设计稿生成/还原 | `oil-oil/draw-ui` | 生成 UI 设计稿（图片），并还原为 HTML/CSS/小程序 |
 | 11 | m3e-canvas 可拖拽 UI 设计 | `lnkiai/m3e-canvas` | AI 生成 Material 3 设计 JSON → 分享链接 → 侧边栏/浏览器拖改 → 导出 vibe-coding 提示词 |
 | 12 | superpowers 开发方法论 | `obra/superpowers` | 给 AI 编程代理的完整开发方法论：头脑风暴 → 计划 → TDD → 子代理执行 → 调试 → 验证 → 评审 |
+| 13 | frontend-design 设计哲学 | `anthropics/skills` | Anthropic 官方设计宪法：像设计工作室主设那样思考，避开 5 大 AI 默认陷阱，两遍流程 |
+| 14 | taste-skill 研究方向引擎 | `Leonxlnx/taste-skill` | 从 247 个策展站提炼：脚本发牌 20 方向、反 slop 房规、真实浏览器 inspect、截图 look-and-fix |
+| 15 | garden-skills 风格配方库 | `ConardLi/garden-skills` | web-design-engineer 25 种风格配方 + 设计工程师全流程；另含视频演示/图像生成/文章排版等 6 技能 |
 
 ## 安装
 
@@ -54,6 +59,9 @@ CHT-UI-SKILLS/
 ├── references/01–08.md      # 前 8 项能力分册
 ├── oil-ui/                  # 第 9 项：oil-ui 完整技能
 ├── draw-ui/                 # 第 10 项：draw-ui 完整技能
-└── m3e-canvas/              # 第 11 项：m3e-canvas 可拖拽 UI 设计（SKILL.md + scripts/ + references/）
-└── superpowers/             # 第 12 项：superpowers 开发方法论（SKILL.md + skills/ 15 个组合式技能）
+├── m3e-canvas/              # 第 11 项：m3e-canvas 可拖拽 UI 设计（SKILL.md + scripts/ + references/）
+├── superpowers/             # 第 12 项：superpowers 开发方法论（SKILL.md + skills/ 15 个组合式技能）
+├── frontend-design/         # 第 13 项：Anthropic 官方设计哲学（SKILL.md）
+├── taste-skill/             # 第 14 项：研究方向引擎（SKILL.md + library/ + references/ + scripts/）
+└── garden-skills/           # 第 15 项：风格配方库 + 6 技能（skills/ + README + LICENSE）
 ```

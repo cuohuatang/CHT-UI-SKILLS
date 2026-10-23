@@ -2,11 +2,11 @@
 name: CHT-UI-SKILLS
 display_name: "CHT 前端视觉与动效技能集"
 display_name_en: "CHT UI Skills"
-description: "一站式前端视觉与动效技能集，融合 12 大能力：p5.js 创意编码、CSS Doodle 图案生成、Theatre.js 时间轴编排、React Spring 物理动画、Inure 精致微交互、UI-UX Craft 设计规范工艺、React PostFX 后期特效、Chakra UI 组件系统、oil-ui 界面设计/改版/评审、draw-ui 设计稿生成与截图还原、m3e-canvas 可拖拽 UI 设计，以及 superpowers 开发方法论（头脑风暴/计划/TDD/调试/验证/评审）。按任务路由到对应分册。"
-description_zh: "CHT-UI-SKILLS：前端视觉/动效/设计/工程全家桶——创意编码、生成图案、动画编排、物理动画、微交互、设计规范、后期特效、组件系统、界面设计评审、设计稿生成还原、可拖拽 UI 设计、开发方法论（TDD/计划/验证/评审）"
-description_en: "CHT-UI-SKILLS: a frontend visual & motion toolkit covering p5.js, css-doodle, Theatre.js, React Spring, Inure micro-interactions, UI/UX craft, React PostFX, Chakra UI, oil-ui design/review, draw-ui design-to-code, m3e-canvas draggable UI design, and superpowers dev methodology."
+description: "一站式前端视觉与动效技能集，融合 15 大能力：p5.js 创意编码、CSS Doodle 图案生成、Theatre.js 时间轴编排、React Spring 物理动画、Inure 精致微交互、UI-UX Craft 设计规范工艺、React PostFX 后期特效、Chakra UI 组件系统、oil-ui 界面设计/改版/评审、draw-ui 设计稿生成与截图还原、m3e-canvas 可拖拽 UI 设计、superpowers 开发方法论（头脑风暴/计划/TDD/调试/验证/评审）、frontend-design 设计哲学（Anthropic 官方，反 AI 默认陷阱）、taste-skill 研究方向引擎（脚本发牌 + 反 slop 实测）、garden-skills 风格配方库（25 种风格 + 6 技能）。按任务路由到对应分册。"
+description_zh: "CHT-UI-SKILLS：前端视觉/动效/设计/工程/审美全家桶——创意编码、生成图案、动画编排、物理动画、微交互、设计规范、后期特效、组件系统、界面设计评审、设计稿生成还原、可拖拽 UI 设计、开发方法论（TDD/计划/验证/评审）、设计哲学（反 AI 味）、研究方向引擎、25 种风格配方"
+description_en: "CHT-UI-SKILLS: a frontend visual & motion toolkit covering p5.js, css-doodle, Theatre.js, React Spring, Inure micro-interactions, UI/UX craft, React PostFX, Chakra UI, oil-ui design/review, draw-ui design-to-code, m3e-canvas draggable UI design, superpowers dev methodology, Anthropic frontend-design philosophy, taste-skill direction engine, and garden-skills style recipes."
 category: frontend
-version: 1.1.1
+version: 1.2.0
 author: cuohuatang
 tags:
   - frontend
@@ -24,15 +24,22 @@ tags:
   - development
   - tdd
   - methodology
+  - anti-slop
+  - design-taste
+  - taste-skill
+  - frontend-design
+  - garden-skills
+  - style-recipes
+  - art-direction
 allowed-tools: Read,Write,Bash
 ---
 
 # CHT-UI-SKILLS —— 前端视觉与动效技能集
 
-> 把 12 个前端视觉/动效/设计/工程能力**嫁接成一个技能包**。每个能力都是对应知名开源项目的实战工艺指南，
+> 把 15 个前端视觉/动效/设计/工程能力**嫁接成一个技能包**。每个能力都是对应知名开源项目（或官方/策展来源）的实战工艺指南，
 > 本文件是**总入口与路由**，具体 API、模板、配方都在 `references/` 分册里（渐进披露，按需读取）。
 
-## 一、12 大能力一览
+## 一、15 大能力一览
 
 | # | 能力 | 开源来源 | 一句话 |
 |---|------|----------|--------|
@@ -48,6 +55,9 @@ allowed-tools: Read,Write,Bash
 | 10 | **draw-ui 设计稿生成/还原** | `oil-oil/draw-ui` | 生成 UI 设计稿（图片），并还原为 HTML/CSS/小程序；与 oil-ui 互补 |
 | 11 | **m3e-canvas 可拖拽 UI 设计** | `lnkiai/m3e-canvas` | AI 生成 Material 3 设计 JSON → 分享链接 → 侧边栏/浏览器拖改 → 导出 vibe-coding 提示词 |
 | 12 | **superpowers 开发方法论** | `obra/superpowers` | 给 AI 编程代理的完整开发方法论：头脑风暴 → 计划 → TDD → 子代理执行 → 调试 → 验证 → 评审 |
+| 13 | **frontend-design 设计哲学** | `anthropics/skills`（Anthropic 官方） | 设计宪法：像设计工作室主设那样思考，避开 5 大 AI 默认陷阱，两遍流程（先 token 设计计划 → 审校 → 再写码） |
+| 14 | **taste-skill 研究方向引擎** | `Leonxlnx/taste-skill` | 从 247 个策展画廊站提炼：脚本发牌 20 个研究方向、严格 no-slop 房规、真实浏览器 inspect、三宽度截图 look-and-fix 循环 |
+| 15 | **garden-skills 风格配方库** | `ConardLi/garden-skills` | web-design-engineer 内置 25 种风格配方（Linear/Aesop/Pentagram/Stripe…）+ 设计工程师全流程；另含视频演示/图像生成/文章排版/知识检索/动效展示共 6 技能 |
 
 ## 二、什么时候用 / 不要用
 
@@ -57,6 +67,9 @@ allowed-tools: Read,Write,Bash
 若要做**UI 设计稿（图片）生成、截图/参考图精准还原成 HTML/CSS/小程序**，路由到 `draw-ui/SKILL.md`（第 10 项）。
 若要做**可拖拽/可交互的 UI 原型**（AI 直出设计、边看边改、导出 vibe-coding 提示词），路由到 `m3e-canvas/SKILL.md`（第 11 项）。
 若要把设计交付物变成**工程化、已验证的代码**（需求收敛/计划/TDD/调试/验证/评审），路由到 `superpowers/SKILL.md`（第 12 项）。
+若要为设计确立**「不像 AI」的审美哲学**（主题优先、避默认字体、避开 5 大 AI 默认陷阱、两遍流程），读 `frontend-design/SKILL.md`（第 13 项）作为审美底座。
+若要**脚本化生成并筛选研究方向**（发牌 20 个已研究方向、反 slop 房规、真实浏览器 inspect、三宽度截图 look-and-fix），路由到 `taste-skill/SKILL.md`（第 14 项）。
+若要**套用 25 种具体风格配方**（Linear/Aesop/Pentagram/Stripe…）或走设计工程师全流程（含 Step 0 事实核查、Design Direction Advisor 模式），路由到 `garden-skills/skills/web-design-engineer/SKILL.md`（第 15 项）。
 
 **不用：** 纯后端、纯业务逻辑、与视觉/交互无关的任务无需激活。若只是静态样式微调（颜色/间距），
 可走 `ui-ux-craft` 分册的 token 规范；若需要选整体设计风格方向，与 `ui-ux-pro-max` 互补（它选方向，本技能落地）。
@@ -77,9 +90,13 @@ allowed-tools: Read,Write,Bash
 | UI 设计稿（图片）生成、截图还原成 HTML/CSS/小程序、参考图精准复刻 | `draw-ui/SKILL.md`（含自带的 references/、scripts/、assets/、evals/） |
 | 可拖拽/可交互的 UI 原型、AI 直出设计、边看边改、vibe-coding 提示词 | `m3e-canvas/SKILL.md`（含自带的 scripts/、references/） |
 | 开发方法论、需求收敛、计划、TDD、调试、完成前验证、代码评审、子代理驱动 | `superpowers/SKILL.md`（含自带的 skills/，15 个组合式技能） |
+| 确立「不像 AI」的审美哲学 / 避开默认字体与默认陷阱 / 设计前先定 token 计划并审校 | `frontend-design/SKILL.md` |
+| 脚本化生成研究方向 / 反 slop 房规 / 真实浏览器 inspect / 三宽度截图 look-and-fix | `taste-skill/SKILL.md`（含 `library/` 20 方向、`references/`、`scripts/`） |
+| 套用 25 种风格配方 / 设计工程师全流程 / Step 0 事实核查 / Design Direction Advisor / 网页视频演示·图像生成·文章排版·知识检索 | `garden-skills/skills/`（web-design-engineer 等 6 技能） |
 
 **组合模式（常见）：** Theatre.js 编排转场 + React Spring 做交互反馈 + React PostFX 做画面；
-UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
+UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座；
+**审美组合（AI 审美三件套，接口④⑤）**：frontend-design 定审美立场 + taste-skill/garden-skills 供方向素材 + taste-skill look-and-fix 实测验收——专治「AI 味 / 模板脸」。
 
 ## 四、全局铁律（跨所有子能力）
 
@@ -94,6 +111,9 @@ UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
 9. **TDD 不可跳过**（superpowers）：写任何实现代码前先写测试，且必须亲眼看过测试失败（红）再写实现到通过（绿）。
 10. **计划先行**（superpowers）：需求未收敛不进实现；计划未确认不动手；不 YAGNI/DRY 双标——不做多余的东西，重复代码必须抽象。
 11. **完成前验证**（superpowers）：声称"完成"前，必须运行验证（测试/构建/检查）并给出证据，不得口头宣称完成。
+12. **反 AI 默认陷阱**（frontend-design）：动笔前先识别并避开 AI 生成界面的 5 大默认特征——① 米白底(#F4F1EA)+高对比衬线+陶土/暖橙强调；② 近黑底+单一荧光绿/朱红强调；③ 报纸式细线密集分栏、零圆角；④ SaaS 卡片套件（同一圆角/同一灰阴影/渐变装饰）；⑤ 模板铬件（全大写 eyebrow、"A · B · C" 中点串、"词—片段"破折号标签、等宽小数据标签、链接文字后加 "→"）。这些对某些 brief 合法，但若是「默认」而非「为这个 brief 做的选择」就不要用。
+13. **实测而非空想**（taste-skill）：设计好坏靠**真实浏览器测量与截图**判定，不凭感觉——用 `taste-skill/scripts/inspect.mjs` 量排版，走「三宽度截图 → 评审 rubric → fix → 再看」的 look-and-fix 循环；没在浏览器里亲眼看过自己做的页面，不算做完。
+14. **事实先于设计**（garden web-design-engineer Step 0）：设计涉及具体产品/品牌/技术/版本/时间线时，**先核实再设计**，不凭记忆断言；搜不到或存疑就问用户，禁用"我觉得 X 还没发布 / 应该是 N 版 / X 大概不存在"这类无据表述。
 
 ## 五、分册索引（触发词 → 文件）
 
@@ -111,6 +131,9 @@ UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
 | `draw-ui/SKILL.md` | draw-ui、UI 设计稿、生成设计图、截图还原、HTML 还原、小程序、参考图复刻、design mockup、reconstruction |
 | `m3e-canvas/SKILL.md` | m3e、M3E Canvas、可拖拽设计、可交互原型、Material 3 画布、AI 直出设计、边看边改、vibe-coding、分享链接、#docz |
 | `superpowers/SKILL.md` | superpowers、开发方法论、需求收敛、计划、TDD、测试驱动、调试、完成前验证、代码评审、子代理驱动、worktree |
+| `frontend-design/SKILL.md` | frontend-design、设计哲学、审美宪法、反 AI 味、避开默认陷阱、design lead、token 设计计划、typography |
+| `taste-skill/SKILL.md` | taste-skill、design-taste-frontend、研究方向、反 slop、no-slop、draw.mjs 发牌、浏览器实测、look-and-fix、AI tells、premium、award-level |
+| `garden-skills/skills/web-design-engineer/SKILL.md` | garden-skills、web-design-engineer、风格配方、style-recipes、Linear/Aesop/Pentagram/Stripe、设计工程师、事实核查、Design Direction Advisor、网页视频演示、图像生成、文章排版、知识检索 |
 
 ## 六、与其它技能的关系
 
@@ -118,9 +141,12 @@ UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
 - `draw-ui`（第 10 项）：负责**生成 UI 设计稿（图片）并把截图/参考图精准还原为 HTML/CSS/小程序**，是「设计稿生成 + 还原成代码」这一层。它与 oil-ui 互补——draw-ui 自己也会在探索视觉方向时推荐 oil-ui，二者常串联：draw-ui 出图/还原 → oil-ui 做方向打磨与评审；对已有界面的小幅改造则直接用 draw-ui 的还原路径。
 - `m3e-canvas`（第 11 项）：负责**可拖拽/可交互的 UI 原型**——AI 按 M3E 协议生成设计 JSON，压缩进分享链接，用户在豆包侧边栏或浏览器画布里直接拖改，改完导出 vibe-coding 提示词喂给 AI 代码生成。与 draw-ui 互补：draw-ui 出**静态精细稿**，m3e-canvas 出**可拖改原型**；在内置工作流第二步作为分支乙（见第七节）。
 - `superpowers`（第 12 项）：负责**开发方法论**——需求收敛（brainstorming）、实现计划（writing-plans）、测试驱动开发（test-driven-development）、子代理驱动执行（subagent-driven-development）、系统化调试（systematic-debugging）、完成前验证（verification-before-completion）、代码评审（requesting/receiving-code-review）。是「工程实现」这一层：CHT-UI-SKILLS 的设计/视觉能力负责"做出什么"，superpowers 负责"怎么工程化交付"；在内置工作流第一步（需求模糊时）与第三步（工程模式）对接（见第七节）。
+- `frontend-design`（第 13 项，Anthropic 官方）：**审美哲学底座**——像设计工作室主设那样思考：主题优先、避默认字体、列出并避开 5 大 AI 默认陷阱、两遍流程（先 token 设计计划 → 审校 → 再写码）。它回答「怎么思考才不像 AI」，供所有设计/出稿环节做审美校准。
+- `taste-skill`（第 14 项）：**研究方向引擎**——`scripts/draw.mjs` 从 247 个策展站提炼的 20 个研究方向里发牌 3 个供选，`library/` 提供 type/palette/hero/section 蓝图，`scripts/inspect.mjs` 在真实浏览器里量排版，走三宽度截图 + rubric + fix 的 look-and-fix 循环。与 oil-ui 互补：oil-ui 做设计**判断**，taste-skill 提供**可执行的方向素材与反 slop 验收**。
+- `garden-skills`（第 15 项）：**风格配方库 + 设计工程师全流程**——`web-design-engineer` 内置 25 种锚定风格配方（Linear/Aesop/Pentagram/Bloomberg/Stripe…，各含调色板/字体/手法/反模式）、Step 0 事实核查、需求模糊时切 Design Direction Advisor 模式；另含 `web-video-presentation`（网页视频演示）、`gpt-image-2`（图像生成）、`beautiful-article`（文章排版）、`kb-retriever`（知识检索）、`motion-showreel`（动效展示）。是「具体风格从哪来」的弹药库。
 - `ui-ux-pro-max`：负责选「风格方向」（风格/配色/字体）；本技能负责把方向**落地**成可运行代码与规范。
-- `frontend-design`（Anthropic 设计宪法）、`web-design-guidelines`（可访问性审计）：可在交付前做质量复核。
-- 本技能是「实践工艺 + 工程方法论」层，与它们构成「方向选择 → 设计判断(oil-ui) → 设计稿生成/还原(draw-ui) 或 可拖改原型(m3e-canvas) → 规范制定 → 工程化实现(superpowers) → 可访问性审计」的前端质量闭环。
+- `web-design-guidelines`（可访问性审计）：可在交付前做质量复核。
+- 本技能是「实践工艺 + 审美哲学 + 工程方法论」层，与它们构成「审美底座(frontend-design) → 方向选择(风格配方库/研究方向引擎) → 设计判断(oil-ui) → 设计稿生成/还原(draw-ui) 或 可拖改原型(m3e-canvas) → 规范制定 → 工程化实现(superpowers) → 实测验收(taste-skill) → 可访问性审计」的前端质量闭环。
 
 ## 七、内置工作流：出方案矩阵 → 出稿（静态稿 / 可拖改原型）→ 生成可运行代码（快速 / 工程模式）
 
@@ -137,6 +163,8 @@ UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
    ▼
 【第一步 · 出方案矩阵（多维组合）】
    · 需求模糊 → 先触发 superpowers/brainstorming 收敛出 spec（接口①）
+   · frontend-design 审美打底：定 token 设计计划 + 避开 5 大 AI 默认陷阱（接口④）
+   · taste-skill / garden-skills 采集方向素材：draw.mjs 发牌 20 研究方向 / 25 种风格配方（接口⑤）
    · oil-ui 定调性：认品类 / 拆标杆 / 写 N 套（默认 3）风格方向
    · 8 大分册定技术气质：p5 粒子 / CSS Doodle 图案 / Theatre 叙事 / Spring 弹性 / Inure 微交互 / Chakra 组件 / PostFX 后期 / Craft 规范
    · 交互形态：静态稿（draw-ui）或 可拖改原型（m3e-canvas）
@@ -173,11 +201,13 @@ UI-UX Craft 定 token 与状态规范作为其它所有能力的统一底座。
 ### 第一步：出方案矩阵（多维组合）
 
 1. **需求模糊时先收敛（接口①）**：用户需求不清晰（"做个好一点的界面"），先读 `superpowers/skills/brainstorming/SKILL.md`，用头脑风暴法问出真实目标、约束与验收标准，输出一句话 spec 后再进入方案矩阵。
-2. 按 `oil-ui/SKILL.md` 的「1. 探索并收敛方向」：认品类、拆标杆、定调性，先写出 **N 套（默认 3）风格不同的方向**。
-3. **叠加技术气质维度**：从 8 大分册中选 1–2 种与本设计匹配的技术路线（如「p5 粒子背景 + 科技感」「Chakra 组件化 + 工具效率」「Inure 微交互 + 高级感」），把「风格 × 技术」组合成候选集。
-4. 每套用三四行简述：给人什么感觉、首屏长什么样、字体与色彩、主视觉靠什么、用什么技术实现；附上推荐哪套及理由。
-5. 用户要看实图 → 按 oil-ui 的「风格对比页」把候选集做成真实首屏放进对比页（含 `sheet` 总览图）交给用户挑；**这一轮到此结束**，不自动往下走。
-6. **第一步收尾闸门（强制询问，不可跳过）**：用户挑定后，必须主动询问——
+2. **审美打底（frontend-design，接口④）**：先按 `frontend-design/SKILL.md` 写出紧凑 token 设计计划——色（4–6 个命名 hex）/ 字体及角色 / 布局概念（一句话 + ASCII 线框）/ 本页独有原则；然后对照 brief 自审：哪部分像"换个 brief 也会给的默认答案"就改掉，并主动避开 5 大 AI 默认陷阱（见铁律 12）。这一步决定整套方案的审美水位。
+3. **采集方向素材（taste-skill / garden-skills，接口⑤）**：想要脚本化、可复现的研究方向 → 跑 `taste-skill/scripts/draw.mjs --options 3`（应用屏用 `--app`）从 20 个已研究方向里发牌，`taste-skill/library/` 直接给出 type/palette/hero/section 蓝图；想锚定某个具体品牌气质 → 从 `garden-skills/skills/web-design-engineer/references/style-recipes/`（先读 `INDEX.md`）挑 1 个配方（Linear/Aesop/Pentagram/Stripe…）作视觉基线。
+4. 按 `oil-ui/SKILL.md` 的「1. 探索并收敛方向」：认品类、拆标杆、定调性，先写出 **N 套（默认 3）风格不同的方向**（可用第 3 步的方向素材/风格配方做种子，避免从零拍脑袋）。
+5. **叠加技术气质维度**：从 8 大分册中选 1–2 种与本设计匹配的技术路线（如「p5 粒子背景 + 科技感」「Chakra 组件化 + 工具效率」「Inure 微交互 + 高级感」），把「风格 × 技术」组合成候选集。
+6. 每套用三四行简述：给人什么感觉、首屏长什么样、字体与色彩、主视觉靠什么、用什么技术实现；附上推荐哪套及理由。
+7. 用户要看实图 → 按 oil-ui 的「风格对比页」把候选集做成真实首屏放进对比页（含 `sheet` 总览图）交给用户挑；**这一轮到此结束**，不自动往下走。出稿与验收时用 `taste-skill` 的 look-and-fix（三宽度截图 + rubric）做质量闭环（见铁律 13）。
+8. **第一步收尾闸门（强制询问，不可跳过）**：用户挑定后，必须主动询问——
    > 已定方向 ✅。第二步走哪个分支？**分支甲：draw-ui 出静态精细稿**（完整页面/长页精修视觉稿）；**分支乙：m3e-canvas 出可拖改原型**（AI 直出、边看边改）；也可以只停在设计说明，或直接做可运行实现。
    - 用户确认分支 → 进入对应第二步路径；
    - 用户选"只做设计说明 / 直接可运行实现" → 按对应分册收尾，**不强行调用 draw-ui / m3e-canvas**。
